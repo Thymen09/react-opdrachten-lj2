@@ -1,10 +1,13 @@
-const Movie = () => {
+const Movie = ({title, author}) => {
     return ( 
+
       <section>
-        <h1>Spiderman</h1>
-        <h2>Marvel</h2>
+        <h1>{title}</h1>
+        <h2>{author}</h2>
       </section>
      );
 };
  
 export default Movie;
+
+
