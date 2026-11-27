@@ -1,6 +1,7 @@
 //import useState
 import { useState } from "react";
 import Book from './Book'
+import BookCounter from './BookCounter'
 
 const BookList = () => {
     const [books, setBooks] = useState([
@@ -14,6 +15,7 @@ const BookList = () => {
 {/* zoek in de cheat sheet naar map en dan naar het onderwerp map met objecten
 plaats op deze plak de map functie die loopt door je books array */}
       <h2>Books:</h2>
+      <BookCounter count={books.length} />
       {books.map(book => (
        <Book title={book.title} author={book.author} image={book.image}/>
       ))}
