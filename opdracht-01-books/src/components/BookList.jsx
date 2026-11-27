@@ -15,9 +15,7 @@ const BookList = () => {
 plaats op deze plak de map functie die loopt door je books array */}
       <h2>Books:</h2>
       {books.map(book => (
-        <article key={book.title}>
-          <p>{book.title} - {book.author}</p>
-        </article>
+       <Book title={book.title} author={book.author} image={book.image}/>
       ))}
         {/* <Book title= "Interesting Facts For Curious Minds" author= "Jordan Moore" image="./images/book-1.png"/>
         <Book title= "Atomic Habits" author= "James Clear" image="./images/book-2.png"/>
